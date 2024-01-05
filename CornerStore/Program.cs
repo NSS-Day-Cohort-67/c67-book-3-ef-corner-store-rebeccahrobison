@@ -87,6 +87,7 @@ app.MapGet("/cashiers/{id}", (CornerStoreDbContext db, int id) =>
     });
 });
 
+
 // PRODUCTS
 // Get all products with their categories
 // If the search query string param is present, return only products whose names or category names include the search value (ignore case).
@@ -144,6 +145,7 @@ app.MapPut("/products/{id}", (CornerStoreDbContext db, int id, Product product) 
     db.SaveChanges();
     return Results.NoContent();
 });
+
 
 // ORDERS
 // Get order details, including cashier, order products, and products
@@ -296,6 +298,9 @@ app.Run();
 
 //don't move or change this!
 public partial class Program { }
+
+
+
 
 
 

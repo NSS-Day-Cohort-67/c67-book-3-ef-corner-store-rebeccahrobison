@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CornerStore.Migrations
 {
     [DbContext(typeof(CornerStoreDbContext))]
-    [Migration("20240105171629_InitialCreate")]
+    [Migration("20240105204355_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
